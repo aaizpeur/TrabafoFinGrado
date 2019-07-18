@@ -1,0 +1,18 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Unit1 in 'Unit1.pas' {cesta},
+  Unit3 in 'Unit3.pas' {Form3},
+  Precio_Correcto in 'Precio_Correcto.pas' {frm_Precio_Correcto};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tcesta, cesta);
+  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(Tfrm_Precio_Correcto, frm_Precio_Correcto);
+  Application.Run;
+end.

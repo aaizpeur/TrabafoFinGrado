@@ -1,0 +1,36 @@
+object frm_Precio_Incorrecto: Tfrm_Precio_Incorrecto
+  Left = 0
+  Top = 0
+  Caption = 'frm_Precio_Incorrecto'
+  ClientHeight = 345
+  ClientWidth = 743
+  Color = clRed
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btn_aceptar: TSpeedButton
+    Left = 288
+    Top = 160
+    Width = 161
+    Height = 49
+    Caption = 'ACEPTAR'
+  end
+  object lbl_incorrecto: TLabel
+    Left = 24
+    Top = 88
+    Width = 686
+    Height = 33
+    Caption = 'RESULTADO INCORRECTO VUELVE A INTENTARLO'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

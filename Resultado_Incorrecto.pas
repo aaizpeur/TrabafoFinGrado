@@ -1,0 +1,32 @@
+unit Resultado_Incorrecto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  Tfrm_Resultado_Incorrecto = class(TForm)
+    btn_aceptar: TSpeedButton;
+    lbl_incorrecto: TLabel;
+    procedure btn_aceptarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_Resultado_Incorrecto: Tfrm_Resultado_Incorrecto;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tfrm_Resultado_Incorrecto.btn_aceptarClick(Sender: TObject);
+begin
+  frm_Resultado_Incorrecto.Close ;
+end;
+
+end.
